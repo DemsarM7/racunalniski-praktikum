@@ -7,10 +7,13 @@
   Naloga 1. (3 točke) V tej datoteki so tri napake. Smiselno jih popravite.
   Pomagajte si s pogledom Problems v VSCode, kot na vajah.
 -->
+<!DOCTYPE html>
+
 <html lang="sl">
   <head>
     <meta charset="UTF-8">
     <title>Ekvivalentna doza banane</title>
+    <link rel="stylesheet" href="oblikovanje.css">
     <!-- Naloga 2. (2 točki) Tu vključite datoteko s slogi oblikovanje.css. V tej datoteki
          - barvo naslovov razdelkov h2 spremenite v #1f4e79,
          - pravilu za podnapise pod slikami (.podnapis) dodajte deklaracijo
@@ -21,7 +24,7 @@
 
     <!-- Naloga 3. (1 točka) V naslednjem odstavku naj bo besedilo "Banana equivalent dose"
          povezava na članek na angleški Wikipediji (naslov je v komentarju na koncu odstavka). -->
-    <p>Vsebina te strani je prevedena in prirejena po članku Banana equivalent dose na angleški
+    <p>Vsebina te strani je prevedena in prirejena po članku <a href="https://en.wikipedia.org/wiki/Banana_equivalent_dose">Banana equivalent dose</a>  na angleški
       Wikipediji. <!-- https://en.wikipedia.org/wiki/Banana_equivalent_dose --></p>
 
     <div>
@@ -29,11 +32,12 @@
            Nadomestno besedilo slike naj bo "Banana, vir kalija-40".
            Elementu div, v katerem sta slika in podnapis, dodajte atribut class
            z vrednostjo slika. -->
+           <img src="banana.jpg" alt="Banana, vir kalija-40">
       <p class="podnapis">Banana vsebuje naravno radioaktivni kalij-40.
         Foto: Evan-Amos, CC BY-SA 3.0</p>
     </div>
 
-    <p><strong>Ekvivalentna doza banane</strong> (angl. <em>banana equivalent dose<em>, BED) je
+    <p><strong>Ekvivalentna doza banane</strong> (angl. <em>banana equivalent dose</em>, BED) je
       neformalna enota za izpostavljenost ionizirajočemu sevanju.
       Z njo dozo sevanja primerjamo z dozo, ki jo prejmemo, če pojemo eno banano povprečne
       velikosti. Banane namreč vsebujejo naravno radioaktivni izotop kalij-40.
@@ -46,7 +50,7 @@
       pomaga, ko javnosti razlaga zanemarljivo majhne doze in prav tako majhna tveganja.
       Za banano z maso 150 g je predlagal vrednost približno 0,1 μSv.</p>
 
-    <h2>Uporaba</h3>
+    <h2>Uporaba</h2>
 
     <p>Ekvivalentna doza banane je neformalna enota, zato so vse primerjave le približne.
       Doza, ki jo prejmemo z eno banano, je približno odstotek povprečne dnevne izpostavljenosti
@@ -56,33 +60,34 @@
     <!-- Naloga 5. (2 točki) Spodnje doze zapišite kot tabelo s tremi stolpci.
          Vsaka celica je v svoji vrstici, vrstice tabele pa so ločene s prazno vrstico.
          Prva vrstica tabele je glava; za njene celice uporabite primerno značko. -->
-    Vir sevanja
-    Doza
-    Število banan
+    <table> sevanja
+    <tr><th>Doza</th></tr>
+    <tr><th>Število banan</th></tr>
 
-    Ena banana
-    0,1 μSv
-    1
+    <tr><th>Ena banana</th></tr>
+    <tr><td>0,1 μSv</td></tr>
+    <tr><td>1</td></tr>
 
-    Povprečna dnevna izpostavljenost sevanju iz okolja
-    10 μSv
-    100
+    <tr><th>Povprečna dnevna izpostavljenost sevanju iz okolja</th></tr>
+    <tr><td>10 μSv</td></tr>
+    <tr><td>100</td></tr>
 
-    Bivanje 16 km od jedrske elektrarne Three Mile Island med nesrečo leta 1979
-    80 μSv
-    800
+    <tr><th>Bivanje 16 km od jedrske elektrarne Three Mile Island med nesrečo leta 1979</th></tr>
+    <tr><td>80 μSv</td></tr>
+    <tr><td>800</td></tr>
 
-    Največja dovoljena letna doza zaradi izpustov iz jedrske elektrarne
-    250 μSv
-    2 500
+    <tr><th>Največja dovoljena letna doza zaradi izpustov iz jedrske elektrarne</th></tr>
+    <tr><td>250 μSv</td></tr>
+    <tr><td>2 500</td></tr>
 
-    Računalniška tomografija prsnega koša
-    7 mSv
-    70 000
+    <tr><th>Računalniška tomografija prsnega koša</th></tr>
+    <tr><td>7 mSv</td></tr>
+    <tr><td>70 000</td></tr>
 
-    Smrtna doza
-    3,5 Sv
-    35 000 000
+    <tr><th>Smrtna doza</th></tr>
+    <tr><td>3,5 Sv</td></tr>
+    <tr><td>35 000 000</td></tr>
+    </table>
 
     <h2>Kritika</h2>
 
